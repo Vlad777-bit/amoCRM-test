@@ -137,6 +137,7 @@
 @media (max-width: 340px) {
     .header {
         &__menu {
+            padding: 20px 15px;
             li {
                 &:last-child {
                     display: none;

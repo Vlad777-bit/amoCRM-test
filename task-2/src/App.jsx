@@ -1,5 +1,6 @@
 import classes from './App.module.scss';
 import { Header } from './components/Header';
+import { Main } from './components/Main';
 
 export const App = () => {
     return (
@@ -11,6 +12,7 @@ export const App = () => {
             <div className={classes.container__redBall}></div>
 
             <Header />
+            <Main />
         </div>
     );
 };
