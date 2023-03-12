@@ -180,7 +180,7 @@
 @media (max-width: 340px) {
     .container {
         &__purpleLight {
-            left: 258px;
+            left: 5em;
             top: 107px;
         }
 
@@ -197,11 +197,15 @@
             top: 402px;
         }
 
+        &__redBall_small {
+            display: none;
+        }
+
         &__purpleBall {
             display: block;
 
-            left: 296px;
-            top: 236px;
+            left: 17em;
+            top: 18em;
         }
     }
 }

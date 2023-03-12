@@ -4,7 +4,7 @@ import LogoIcon from '@/assets/logo_welbex.svg';
 import { Nav } from '@/components/Nav';
 import { Contacts } from '@/components/Contacts';
 
-const headerMenu = [
+const menu = [
     { id: 1, title: 'Услуги', link: '#' },
     { id: 2, title: 'Виджеты', link: '#' },
     { id: 3, title: 'Интеграции', link: '#' },
@@ -22,7 +22,7 @@ export const Header = () => {
                 </p>
             </div>
 
-            <Nav menu={headerMenu} className={classes.header__menu} />
+            <Nav menu={menu} className={classes.header__menu} />
 
             <Contacts className={classes.header__contacts} />
         </header>

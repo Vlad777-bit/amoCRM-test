@@ -9,15 +9,18 @@ export const Contacts = ({ children, ...props }) => {
     return (
         <address className={cn(classes.contacts, props.className)}>
             <a href="tel:85555555555">+7 555 555-55-55</a>
-            <a href="#">
-                <TelegramIcon />
-            </a>
-            <a href="#">
-                <ViberIcon />
-            </a>
-            <a href="#">
-                <WhatsappIcon />
-            </a>
+
+            <div>
+                <a href="#">
+                    <TelegramIcon />
+                </a>
+                <a href="#">
+                    <ViberIcon />
+                </a>
+                <a href="#">
+                    <WhatsappIcon />
+                </a>
+            </div>
 
             {children}
         </address>
