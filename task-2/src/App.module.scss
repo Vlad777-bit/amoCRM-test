@@ -1,0 +1,211 @@
+.container {
+    position: relative;
+
+    width: 1140px;
+    margin: 0 auto;
+    padding: 46px 100px;
+
+    &__purpleBall {
+        position: absolute;
+        top: -2px;
+        left: 868px;
+        z-index: -1;
+
+        width: 60px;
+        height: 60px;
+
+        background: radial-gradient(
+            64% 64% at 27.25% 26.5%,
+            rgba(236, 208, 255, 0.64) 0%,
+            rgba(161, 93, 207, 0.24) 59.67%,
+            rgba(118, 49, 164, 0.208) 78.59%,
+            rgba(86, 24, 128, 0.232) 100%
+        );
+        box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+        filter: blur(5px);
+        backdrop-filter: blur(2px);
+        border-radius: 50%;
+    }
+
+    &__redBall {
+        position: absolute;
+        top: 83px;
+        left: 519px;
+        z-index: -1;
+
+        width: 83px;
+        height: 83px;
+
+        background: radial-gradient(
+            64% 64% at 27.25% 26.5%,
+            rgba(255, 208, 208, 0.536) 0%,
+            rgba(212, 93, 93, 0.264) 59.67%,
+            rgba(167, 49, 49, 0.248) 78.59%,
+            rgba(130, 25, 25, 0.248) 100%
+        );
+        box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+        backdrop-filter: blur(2px);
+        border-radius: 50%;
+    }
+
+    &__redBall_small {
+        position: absolute;
+        top: 547px;
+        left: 851px;
+        z-index: -1;
+
+        width: 28px;
+        height: 28px;
+
+        background: radial-gradient(
+            64% 64% at 27.25% 26.5%,
+            rgba(255, 208, 208, 0.48) 0%,
+            rgba(212, 93, 93, 0.248) 59.67%,
+            rgba(167, 49, 49, 0.264) 78.59%,
+            rgba(130, 25, 25, 0.232) 100%
+        );
+        box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+        filter: blur(2.5px);
+        backdrop-filter: blur(2px);
+        border-radius: 50%;
+    }
+
+    &__redLight {
+        position: absolute;
+        top: 251px;
+        left: -102px;
+        z-index: -1;
+
+        width: 311px;
+        height: 311px;
+
+        background: #961a1a;
+        opacity: 0.5;
+        border-radius: 50%;
+        filter: blur(196px);
+    }
+
+    &__purpleLight {
+        position: absolute;
+        top: -154px;
+        left: 602px;
+        z-index: -1;
+
+        width: 259px;
+        height: 259px;
+
+        background: #833ab4;
+        opacity: 0.5;
+        border-radius: 50%;
+        filter: blur(196px);
+    }
+}
+
+@media (max-width: 1400px) {
+    .container {
+        padding: 46px 50px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .container {
+        width: 1080px;
+        padding: 46px 50px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: auto;
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 930px) {
+    .container {
+        &__purpleBall {
+            top: 20em;
+            left: 47em;
+        }
+
+        &__redBall_small {
+            top: 15em;
+            left: 20em;
+        }
+    }
+}
+
+@media (max-width: 865px) {
+    .container {
+        &__purpleLight {
+            left: 20em;
+        }
+    }
+}
+
+@media (max-width: 840px) {
+    .container {
+        padding: 0;
+    }
+}
+
+@media (max-width: 814px) {
+    .container {
+        &__purpleBall {
+            left: 30em;
+        }
+    }
+}
+
+@media (max-width: 610px) {
+    .container {
+        &__redBall {
+            display: none;
+        }
+
+        &__purpleLight {
+            left: 0;
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .container {
+        &__purpleBall {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 340px) {
+    .container {
+        &__purpleLight {
+            left: 5em;
+            top: 107px;
+        }
+
+        &__redLight {
+            left: -55px;
+            top: 241px;
+        }
+
+        &__redBall {
+            width: 43px;
+            height: 43px;
+            display: block;
+            left: 29px;
+            top: 402px;
+        }
+
+        &__redBall_small {
+            display: none;
+        }
+
+        &__purpleBall {
+            display: block;
+
+            left: 17em;
+            top: 18em;
+        }
+    }
+}
